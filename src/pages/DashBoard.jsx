@@ -2,6 +2,9 @@ import Sidebar from "../components/SideBar";
 import Header from "../components/Header";
 import Statscard from "../components/StatsCard";
 import { FiArrowDownCircle, FiArrowUpCircle, FiDollarSign } from "react-icons/fi";
+import Charts from "../components/Charts";
+import TransactionsTable from "../components/Transaction";
+import { transactions, chartData } from "../data/Dummydata";
 
 const Dashboard = () =>{
     return (
@@ -29,7 +32,13 @@ const Dashboard = () =>{
             bgColor="bg-blue-500"
           />
         </div>
-                <h2 className="text-2xl font-semibold">Dashboard Content</h2>
+        {/* Charts */}
+        <Charts data={chartData} />
+
+        {/* Transactions Table */}
+        <TransactionsTable transactions={transactions} />
+
+               
          </div>
          </div>
     );
