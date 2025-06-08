@@ -1,10 +1,12 @@
 import Sidebar from "../components/SideBar";
+import Header from "../components/Header";
 
 const Dashboard = () =>{
     return (
         <div className="flex min-h-screen">
         <Sidebar />
          <div className="flex-1 bg-gray-100 p-6">
+            <Header />
                 <h2 className="text-2xl font-semibold">Dashboard Content</h2>
          </div>
          </div>
